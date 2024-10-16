@@ -1,11 +1,17 @@
+import { Browser } from 'appwrite'
 import React from 'react'
+import { BrowserRouter , Routes , Route } from 'react-router-dom'
+import Auth from './Pages/Auth'
+import Home from './Pages/Home'
 
 const App = () => {
   return (
-    <div >
-      <p className='  text-green-500  text-8xl'>App </p>
-      
-      </div>
+    <BrowserRouter >
+      <Routes>
+        <Route element={<Home/>} path='/'  />
+        <Route element={<Auth/>} path='/auth'  />
+      </Routes>
+      </BrowserRouter>
   )
 }
 
