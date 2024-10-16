@@ -1,52 +1,40 @@
-import React ,{useState} from 'react'
+import React,{useState , useEffect} from 'react'
+import {loginWithGoogle ,  logoutUser  , getUser  } from "./Suth.js"
 
-import { account , ID } from '../Appwrite/config';
+
+
+
+
 const Auth = () => {
-    const [loggedInUser, setLoggedInUser] = useState(null);
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [name, setName] = useState('');
-  
-    async function login(email, password) {
-      await account.createEmailPasswordSession(email, password);
-      setLoggedInUser(await account.get());
+
+  const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    const checkUser = async () => {
+      try {
+        const userData = await getUser()
+        setUser(userData)
+      } catch (error) {
+        setUser(null)
+      }
     }
+
+    checkUser()
+  }, [])
+
   return (
+
     <div>
-    <p>
-      {loggedInUser ? `Logged in as ${loggedInUser.name}` : 'Not logged in'}
-    </p>
-
-    <form>
-      <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
-      <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
-      <input type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
-
-      <button type="button" onClick={() => login(email, password)}>
-        Login
-      </button>
-
-      <button
-        type="button"
-        onClick={async () => {
-          await account.create(ID.unique(), email, password, name);
-          login(email, password);
-        }}
-      >
-        Register
-      </button>
-
-      <button
-        type="button"
-        onClick={async () => {
-          await account.deleteSession('current');
-          setLoggedInUser(null);
-        }}
-      >
-        Logout
-      </button>
-    </form>
-  </div>  )
+    {user ? (
+      <>
+        <p>Welcome, {user.name}!</p>
+        <button onClick={logoutUser}>Logout</button>
+      </>
+    ) : (
+      <button onClick={loginWithGoogle}>Login with Google</button>
+    )}
+  </div>
+  )
 }
 
 export default Auth
