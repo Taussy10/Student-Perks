@@ -1,5 +1,5 @@
 import React from 'react'
-import {loginWithGoogle ,  logoutUser  , getUser , session } from "./Suth.js"
+import {loginWithGoogle ,  logoutUser  , getUser , session } from "./Auth.js"
 
 const Home = () => {
   return (

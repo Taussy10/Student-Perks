@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter , Routes , Route } from 'react-router-dom'
-import Auth from './Pages/Auth'
 import Home from './Pages/Home'
 import Fail from './Pages/Fail'
+import Auth from './Pages/Auth'
 
 const App = () => {
   return (
@@ -15,10 +15,8 @@ const App = () => {
     //   </BrowserRouter>
 
     <div className="App">
-    <header className="App-header">
-      <h1>Appwrite Google Auth Example</h1>
       <Auth />
-    </header>
+    
   </div> 
   )
 }

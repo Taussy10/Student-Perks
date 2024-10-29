@@ -22,7 +22,7 @@ export const addData = async () => {
       ID.unique(), // Automatically generate unique ID
     
       {
-        companyName: "Github",
+        companyName: "Git bucket",
         desc: "Get free",
         image: "Naahi hai bhai",
       }
@@ -32,24 +32,27 @@ export const addData = async () => {
     console.error("Error adding data:", error);
   }
 };
+
+
 export const updateData = async () => {
   try {
     await databases.updateDocument(
         appwriteConfig.databaseId, // Database ID
         appwriteConfig.collectionId, // Collection ID
-      "671001e50018d86f23b7", // Automatically generate unique ID
+      "67210249002b4a51cd02", // Automatically generate unique ID
     
       {
-        companyName: "Github",
+        companyName: "Git bucket",
         desc: "Get free",
-        image: "Naahi hai bhai",
+        image: "https://cloud.appwrite.io/console/project-670f793200296470b5b2/databases/database-670f82490001a68bcdb8/collection-670f827900311996afe4/document-67210249002b4a51cd02/data",
       }
     );
-    console.log( "Added all the data");
+    console.log( "Update all the data");
   } catch (error) {
     console.error("Error adding data:", error);
   }
 };
+
 
 
 export const listData = async () => {

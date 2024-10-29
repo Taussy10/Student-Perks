@@ -49,10 +49,12 @@ const Auth = () => {
     ) : (
       <button onClick={loginWithGoogle}>Login with Google</button>
     )} */}
-      <button className='text-xl' onClick={addData}>Add data</button>
+    <div className=' flex  flex-col'>
+      <button className='text-xl ' onClick={addData}>Add data</button>
       <button className='text-xl' onClick={listData}>List data</button>
       <button className='text-xl' onClick={updateData}>Update data</button>
       </div>
+    </div>
   )
 }
 
