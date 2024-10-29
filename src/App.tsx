@@ -3,7 +3,6 @@ import { BrowserRouter , Routes , Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import Fail from './Pages/Fail'
 import Auth from './Pages/Auth'
-
 const App = () => {
   return (
     // <BrowserRouter >
@@ -15,7 +14,8 @@ const App = () => {
     //   </BrowserRouter>
 
     <div className="App">
-      <Auth />
+      {/* <Auth /> */}
+      <Home />
     
   </div> 
   )
