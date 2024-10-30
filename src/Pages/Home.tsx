@@ -48,7 +48,7 @@ const Home = () => {
 </div>
 
 {/* Card Content  */}
-<div className='  text-center p-4 mt-10 '>
+<div className='  text-center p-4 mt-16 '>
 <p className=" text-xl text-indigo-600  font-semibold">AMAZON WEB SERVICES</p>
         <h3 className="text-lg font-bold mt-1">Learn Cloud Skills with AWS Educate</h3>
 </div>

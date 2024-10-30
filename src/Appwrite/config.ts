@@ -1,10 +1,11 @@
-import { Client, Account, OAuthProvider, Databases, ID , Query } from 'appwrite';
+import { Client, Account, OAuthProvider, Databases, ID , Query , Storage } from 'appwrite';
 
 const appwriteConfig = {
  endPoint: import.meta.env.VITE_Endpoint,
  projectId: import.meta.env.VITE_Project_ID,
  databaseId: import.meta.env.VITE_DATABASE_ID,
  collectionId: import.meta.env.VITE_COLLECTIONS_ID,
+ logoBucketId: import.meta.env.VITE_LOGO_BUCKET_ID
 }
 
 export const client = new Client()
@@ -13,6 +14,7 @@ export const client = new Client()
 
 export const account = new Account(client);
 export const databases = new Databases(client);
+export const storage = new Storage(client)
 
 export const addData = async () => {
   try {
@@ -73,4 +75,20 @@ export const listData = async () => {
   }
 };
 
+// Upload files in storage
 
+const uploadFiles =  async(file) =>  {
+  try {
+    const storeFiles = storage.createFile(
+      appwriteConfig.logoBucketId,
+      ID.unique(),
+      file
+      
+    )
+  } catch (error) {
+    console.log(error , "Error aa raha hai");
+    
+  }
+  
+  
+}

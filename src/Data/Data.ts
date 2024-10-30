@@ -8,10 +8,11 @@ export const Perks = [
     },
     {
       id: 2,
-      img: "",
+      logo: "",
+      bgImage: "",
       companyName: "DATACAMP",
       desc: "Data Science & AI Courses for $1 (First Month)",
-      category: " ",
+      category: "Education",
     },
     {
       id: 3,
