@@ -1,6 +1,6 @@
 import React,{useState , useEffect} from 'react'
 // import {loginWithGoogle ,  logoutUser  , getUser  } from "./Suth.js"
-import { addData  , updateData } from '../Appwrite/config.js'
+import { addData  , listData, updateData } from '../Appwrite/config.js'
 
 
 
@@ -23,35 +23,15 @@ const Auth = () => {
 
 
 
-  // const [user, setUser] = useState(null)
 
-  // useEffect(() => {
-  //   const checkUser = async () => {
-  //     try {
-  //       const userData = await getUser()
-  //       setUser(userData)
-  //     } catch (error) {
-  //       setUser(null)
-  //     }
-  //   }
-
-  //   checkUser()
-  // }, [])
 
   return (
 
     <div>
-    {/* {user ? (
-      <>
-        <p>Welcome, {user.name}!</p>
-        <button onClick={logoutUser}>Logout</button>
-      </>
-    ) : (
-      <button onClick={loginWithGoogle}>Login with Google</button>
-    )} */}
+
     <div className=' flex  flex-col'>
       <button className='text-xl ' onClick={addData}>Add data</button>
-      {/* <button className='text-xl' onClick={listData}>List data</button> */}
+      <button className='text-xl' onClick={listData}>List data</button>
       <button className='text-xl' onClick={updateData}>Update data</button>
       </div>
     </div>

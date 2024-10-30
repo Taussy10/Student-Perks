@@ -1,24 +1,27 @@
-import React from 'react'
+import React,{useState , useEffect} from 'react'
+import { listData } from '../Appwrite/config'
 
 //{/* by using tailwind css h1 , h2 power end and all of them are p tag */}
 
 const Home = () => {
-
+  const [courseData, setCourseData] = useState([])
 
   const bgImage = "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/672128c90038b95e0cf0/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin"
   const courseImage = "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6721b06c00181948ee7d/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin"
+
+console.log(listData());
+
   return (
     <div className='    min-h-screen  bg-gray-500   '>
+
  
  <div className= 'ml-24 mr-24  '   >
-
-
 <div className=' flex flex-col   mb-12 '>
 <h1 className=' text-center  text-4xl'>Education</h1>
 <h1 className='  text-2xl'>Dive into a world of learning with discounted online courses, e-books, and study resources designed for students worldwide. Elevate your education without breaking the bank.</h1>
 </div>
 
-
+<button onClick={listData}> list data</button>
 
 
 

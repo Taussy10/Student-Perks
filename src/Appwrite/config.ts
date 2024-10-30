@@ -65,40 +65,24 @@ export const updateData = async () => {
 
 
 
-// export const listData = async () => {
-//   try {
-//   const gotData =   await databases.listDocuments(
-//     appwriteConfig.databaseId, // Database ID
-//     appwriteConfig.collectionId, // Collection ID
-//       [
-//         Query.equal('companyName', 'Microsoft'),
-//         Query.equal('desc', 'Free nahi hai bhia'),
-//         Query.equal('image', 'Hai image'),
-//     ]
-//     );
-//     return gotData.documents
-//     // console.log( gotData.documents ,"Got all data bhai");
-//   } catch (error) {
-//     console.error("Error adding data:", error);
-//   }
-// };
-
-// Upload files in storage
-
-const uploadFiles =  async(file) =>  {
+export const listData = async () => {
   try {
-    const storeFiles = storage.createFile(
-      appwriteConfig.logoBucketId,
-      ID.unique(),
-      file
-      
-    )
+  const gotData =   await databases.listDocuments(
+    appwriteConfig.databaseId, // Database ID
+    appwriteConfig.collectionId, // Collection ID
+    //   [
+    //     Query.equal('companyName', 'Figma'),
+    // ]
+    );
+    return gotData.documents
+    // console.log( gotData.documents ,"Got all data bhai");
   } catch (error) {
-    console.log(error , "Error aa raha hai");
-    
+    console.error("Error adding data:", error);
   }
-  
-  
-}
+};
+
+
+
+
 
 // Notion , Fotor , Figma , Headspace , JetBrains , Amazon
