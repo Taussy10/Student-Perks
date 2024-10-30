@@ -70,9 +70,9 @@ export const listData = async () => {
   const gotData =   await databases.listDocuments(
     appwriteConfig.databaseId, // Database ID
     appwriteConfig.collectionId, // Collection ID
-    //   [
-    //     Query.equal('companyName', 'Figma'),
-    // ]
+  //  Want to list all data that is in database 
+  // so don't use query then it will list all the data 
+
     );
     return gotData.documents
     // console.log( gotData.documents ,"Got all data bhai");
