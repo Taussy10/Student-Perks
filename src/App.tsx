@@ -14,8 +14,8 @@ const App = () => {
     //   </BrowserRouter>
 
     <div className="App">
-      {/* <Auth /> */}
-      <Home />
+      <Auth />
+      {/* <Home /> */}
     
   </div> 
   )

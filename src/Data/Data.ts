@@ -1,3 +1,37 @@
+export const courseData = [ 
+
+  {
+  companyName: "Figma",
+  desc: "For creating UIs",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6722292b00006e8c6596/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/672231fa002e1e47c230/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+},
+{
+  companyName: "Headspace",
+  desc: "Meditation App",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/67225e970001bbc39b9d/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/67223130001501b44a5f/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+},
+{
+  companyName: "Jet Brains",
+  desc: "Code Editor app",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/67222da700228d9f0aff/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6722312100088083ca96/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+},
+{
+  companyName: "Amazon",
+  desc: "Ecommerce app",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/672228de0020ff8bb0eb/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/672232060004990d3357/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+},
+]
+
+
+
+
+
+
+
 export const Perks = [
     {
       id: 1,

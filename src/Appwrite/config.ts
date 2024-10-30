@@ -1,4 +1,6 @@
 import { Client, Account, OAuthProvider, Databases, ID , Query , Storage } from 'appwrite';
+import { courseData } from '../Data/Data';
+
 
 const appwriteConfig = {
  endPoint: import.meta.env.VITE_Endpoint,
@@ -16,19 +18,25 @@ export const account = new Account(client);
 export const databases = new Databases(client);
 export const storage = new Storage(client)
 
+
+
 export const addData = async () => {
   try {
-    await databases.createDocument(
+
+     courseData.forEach((data) => {
+     databases.createDocument(
       appwriteConfig.databaseId, // Database ID
       appwriteConfig.collectionId, // Collection ID
       ID.unique(), // Automatically generate unique ID
+      data
     
-      {
-        companyName: "Git bucket",
-        desc: "Get free",
-        image: "Naahi hai bhai",
-      }
     );
+      
+     });
+
+
+      
+   
     console.log( "Added all the data");
   } catch (error) {
     console.error("Error adding data:", error);
@@ -57,23 +65,23 @@ export const updateData = async () => {
 
 
 
-export const listData = async () => {
-  try {
-  const gotData =   await databases.listDocuments(
-    appwriteConfig.databaseId, // Database ID
-    appwriteConfig.collectionId, // Collection ID
-      [
-        Query.equal('companyName', 'Microsoft'),
-        Query.equal('desc', 'Free nahi hai bhia'),
-        Query.equal('image', 'Hai image'),
-    ]
-    );
-    return gotData.documents
-    // console.log( gotData.documents ,"Got all data bhai");
-  } catch (error) {
-    console.error("Error adding data:", error);
-  }
-};
+// export const listData = async () => {
+//   try {
+//   const gotData =   await databases.listDocuments(
+//     appwriteConfig.databaseId, // Database ID
+//     appwriteConfig.collectionId, // Collection ID
+//       [
+//         Query.equal('companyName', 'Microsoft'),
+//         Query.equal('desc', 'Free nahi hai bhia'),
+//         Query.equal('image', 'Hai image'),
+//     ]
+//     );
+//     return gotData.documents
+//     // console.log( gotData.documents ,"Got all data bhai");
+//   } catch (error) {
+//     console.error("Error adding data:", error);
+//   }
+// };
 
 // Upload files in storage
 
@@ -92,3 +100,5 @@ const uploadFiles =  async(file) =>  {
   
   
 }
+
+// Notion , Fotor , Figma , Headspace , JetBrains , Amazon
