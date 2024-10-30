@@ -3,8 +3,12 @@ import React from 'react'
 //{/* by using tailwind css h1 , h2 power end and all of them are p tag */}
 
 const Home = () => {
+
+
+  const bgImage = "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/672128c90038b95e0cf0/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin"
+  const courseImage = "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6721b06c00181948ee7d/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin"
   return (
-    <div className='   bg-blue-500   '>
+    <div className='    min-h-screen  bg-gray-500   '>
  
  <div className= 'ml-24 mr-24  '   >
 
@@ -27,24 +31,32 @@ const Home = () => {
 
 
 
-
-
-
       {/* Courses div */}
-      <div className='  h-[500px]  w-[360px]   bg-green-500 rounded-md ' >
+      {/* To create a card
+      1.  Define a box for card 
+      */}
+      <div className=' relative   h-[400px]  w-[350px]  overflow-hidden    bg-white shadow-md   rounded-xl  ' >
    
-<img src="https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/672128c90038b95e0cf0/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin" alt="course-image" className='' />
+   {/* For the background image */}
+<div >
+<img src= {bgImage} alt="course-image" className=' w-full h-full' />
+{/* This is parent realtive and it's child will work according to parent  */}
+</div>
 
-<div className='absolute h-32 w-32  left-52  bg-white   '>
+<div className='absolute h-24 w-24   top-36 left-28  bg-white   shadow-md rounded-lg p-1   flex flex-col justify-center items-center   '>
+<img src= {courseImage} alt="bg-course-image" className='    object-contain     '/>
+</div>
 
-<img src="https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/67211f0a0026f21a9e9b/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin" alt="bg-course-image"
-
-className='     '/>
+{/* Card Content  */}
+<div className='  text-center p-4 mt-10 '>
+<p className=" text-xl text-indigo-600  font-semibold">AMAZON WEB SERVICES</p>
+        <h3 className="text-lg font-bold mt-1">Learn Cloud Skills with AWS Educate</h3>
 </div>
 
 
+
+
       </div>
-    Homes
     </div>
     </div>
   )
