@@ -5,6 +5,7 @@ import './index.css'
 import { createBrowserRouter , Router, RouterProvider } from 'react-router-dom'
 import Home from './Pages/Home.tsx'
 import Error from './Pages/Error.tsx'
+import Test from './Pages/Test.tsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     path: "/education",
     element: <Home/>
   },
+  // {
+  //   path: '/:id',
+  //   element: <Test/>
+  // }
  
 ])
 

@@ -9,8 +9,9 @@ import { Link } from 'react-router-dom'
 //{/* by using tailwind css h1 , h2 power end and all of them are p tag */}
 
 const Home = () => {
-  const [selectedCategory, setSelectedCategory] = useState("");
-
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  // by default ALL 
+  const nav = ["Popular", "Education", "Software & Tools", "Entertainment", "Health & Wellbeing", "Shopping"];
   const [courseData, setCourseData] = useState([])
   // 1. Store the data by storing we can acces the data 
   // now we have to execute function the data will be shown in browser
@@ -24,8 +25,8 @@ const Home = () => {
         //  now data is in listedData variable 
     
         // now store in useState for accesing it everwhere
-        setCourseData(listedData)      
-        // console.log("hello");
+        setCourseData(listedData)  
+        // dta inside courseData array 
       }
       
       
@@ -40,7 +41,11 @@ const Home = () => {
 
 
   
- 
+//  for filtering the data
+
+const filteredData =  selectedCategory === "Popular" ? courseData.filter(item => item.Category==="Popular") :
+courseData.filter(item => item.Category === selectedCategory);
+
  
 
 
@@ -53,8 +58,24 @@ const Home = () => {
 {/* For header and navbar */}
 <div>
   <Header />
-  {/* <Navbar/> */}
-  <Navbar setSelectedCategory={setSelectedCategory} />
+  <div className=' p-6 bg-orange-300'>
+        <div className=' flex flex-row   justify-around'>
+          {
+            nav.map((item) => 
+              
+              <h1
+              key={item}
+              className={`text-xl font-semibold cursor-pointer  text-gray-900 ${selectedCategory === item ? "text-blue-500": " "} `}
+              onClick={() => setSelectedCategory(item)}
+              >{item}
+      
+              </h1>
+             
+            )
+          }
+     
+        </div>
+        </div>
 
 </div>
  
@@ -77,21 +98,17 @@ const Home = () => {
  <div className=' flex  flex-row  justify-around p-4 flex-wrap   bg-green-500 '>
  
    {
-    courseData.map((item , index) => 
+    filteredData.map((item , index) => 
       <a target='blank' rel="noopener" href= {item.PerkLink}>
 {/* rel is for security purposes */}
+  {/* {  */}
+        {/* // item.Category === "Software-&-Tools" ?  */}
+        {/* // <h1 className='  text-xl  text-blue-500'>Popular</h1> */}
+
       <div key={index} className=' relative   h-[450px]   w-[320px]  overflow-hidden    bg-white  shadow-xl   rounded-2xl    mb-8  ' >
 
-      { 
-        item.Category === "Education" ? 
-        <h1 className='  text-xl  text-blue-500'>Popular</h1>
-       : (
-      <h1 >Education</h1>)
-      }
-
-
-
-        {/* For the background image */}
+    
+                {/* For the background image */}
 <div >
 <img src= {item.courseBgImage} alt="bg-course-image" className='  h-56 object-cover  w-full' />
 {/* This is parent realtive and it's child will work according to parent   */}
@@ -110,6 +127,12 @@ const Home = () => {
 </div>
 
 </div>
+       {/* : null */}
+      {/* } */}
+
+
+
+
 </a>
 
 
