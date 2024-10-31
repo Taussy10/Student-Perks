@@ -2,6 +2,8 @@ import React,{useState , useEffect} from 'react'
 import { listData,  } from '../Appwrite/config'
 import Header from '../Components/Home/Header'
 import Navbar from '../Components/Home/Navbar'
+import { Link } from 'react-router-dom'
+
 // just run the function you will get the data
 // but  how to display data
 //{/* by using tailwind css h1 , h2 power end and all of them are p tag */}
@@ -54,7 +56,7 @@ const Home = () => {
   <Navbar/>
 </div>
  
- <div className= 'ml-24 mr-24  '   >
+ <div className= 'ml-40 mr-40  '   >
 <div className=' flex flex-col   mb-12 '>
 <h1 className=' text-center  font-bold text-4xl'>Education</h1>
 <h1 className='  text-2xl'>Dive into a world of learning with discounted online courses, e-books, and study resources designed for students worldwide. Elevate your education without breaking the bank.</h1>
@@ -78,13 +80,16 @@ const Home = () => {
       */}
 
       {/* To  */}
- <div className=' flex  flex-row flex-wrap gap-8 bg-green-500 '>
+ <div className=' flex  flex-row  justify-around p-4 flex-wrap   bg-green-500 '>
+ 
    {
     courseData.map((item , index) => 
-   
-      <div key={index} className=' relative   h-[400px]  w-[350px]  overflow-hidden    bg-white shadow-md   rounded-xl    mb-8  ' >
+      <a target='blank' rel="noopener" href= {item.PerkLink}>
+{/* rel is for security purposes */}
+      <div key={index} className=' relative  h-[430px]    w-[370px]  overflow-hidden    bg-white  shadow-xl   rounded-2xl    mb-8  ' >
 
-
+    
+  
         {/* For the background image */}
 <div >
 
@@ -98,13 +103,15 @@ const Home = () => {
 </div>
 
 {/* Card Content  */}
-<div className='  text-center p-4 mt-16 '>
-<p className=" text-xl text-indigo-600  font-semibold">{item.companyName}</p>
-      <h3 className="text-lg font-bold mt-1">{item.desc}</h3>
+<div className='  text-center p-4 mt-12  '>
+<p className=" text-2xl text-blue-600  font-bold">{item.companyName}</p>
+      {/* <h3 className=" font-semibold mt-5 text-xl">{item.desc}</h3> */}
+      {/* <h3 className=" font-semibold mt-3 text-xl"> Elevate your education without breaking the bank.Get unlimited pages & blocks, file uploads.</h3> */}
+      <h3 className=" font-semibold mt-3 text-xl">Get Notion Plus plan for free</h3>
 </div>
 
 </div>
-
+</a>
     )
 
     

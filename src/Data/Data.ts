@@ -5,6 +5,7 @@ export const courseData = [
   desc: "For creating UIs",
   courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6722292b00006e8c6596/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
   courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/672231fa002e1e47c230/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  
 },
 {
   companyName: "Headspace",
