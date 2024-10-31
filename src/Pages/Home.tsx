@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom'
 //{/* by using tailwind css h1 , h2 power end and all of them are p tag */}
 
 const Home = () => {
+  const [selectedCategory, setSelectedCategory] = useState("");
+
   const [courseData, setCourseData] = useState([])
   // 1. Store the data by storing we can acces the data 
   // now we have to execute function the data will be shown in browser
@@ -36,9 +38,7 @@ const Home = () => {
 
   }, [])
 
-  // useEffect(() => {
-  //   console.log(courseData , "Hello");
-  // }, [courseData])
+
   
  
  
@@ -53,7 +53,9 @@ const Home = () => {
 {/* For header and navbar */}
 <div>
   <Header />
-  <Navbar/>
+  {/* <Navbar/> */}
+  <Navbar setSelectedCategory={setSelectedCategory} />
+
 </div>
  
  <div className= 'ml-40 mr-40  '   >
@@ -61,14 +63,6 @@ const Home = () => {
 <h1 className=' text-center  font-bold text-4xl'>Education</h1>
 <h1 className='  text-2xl'>Dive into a world of learning with discounted online courses, e-books, and study resources designed for students worldwide. Elevate your education without breaking the bank.</h1>
 </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -86,16 +80,21 @@ const Home = () => {
     courseData.map((item , index) => 
       <a target='blank' rel="noopener" href= {item.PerkLink}>
 {/* rel is for security purposes */}
-      <div key={index} className=' relative  h-[430px]    w-[370px]  overflow-hidden    bg-white  shadow-xl   rounded-2xl    mb-8  ' >
+      <div key={index} className=' relative   h-[450px]   w-[320px]  overflow-hidden    bg-white  shadow-xl   rounded-2xl    mb-8  ' >
 
-    
-  
+      { 
+        item.Category === "Education" ? 
+        <h1 className='  text-xl  text-blue-500'>Popular</h1>
+       : (
+      <h1 >Education</h1>)
+      }
+
+
+
         {/* For the background image */}
 <div >
-
-
 <img src= {item.courseBgImage} alt="bg-course-image" className='  h-56 object-cover  w-full' />
-{/* This is parent realtive and it's child will work according to parent  */}
+{/* This is parent realtive and it's child will work according to parent   */}
 </div>
 
 <div className='absolute h-24 w-24   top-44 left-32  bg-white    shadow-md rounded-lg p-1   flex flex-col justify-center items-center   '>
@@ -112,6 +111,9 @@ const Home = () => {
 
 </div>
 </a>
+
+
+
     )
 
     
