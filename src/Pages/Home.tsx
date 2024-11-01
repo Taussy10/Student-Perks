@@ -9,9 +9,9 @@ import { Link } from 'react-router-dom'
 //{/* by using tailwind css h1 , h2 power end and all of them are p tag */}
 
 const Home = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState("Popular");
   // by default ALL 
-  const nav = ["Popular", "Education", "Software & Tools", "Entertainment", "Health & Wellbeing", "Shopping"];
+  const navItems = ["Popular", "Education", "Software & Tools", "Entertainment", "Health & Wellbeing", "Shopping"];
   const [courseData, setCourseData] = useState([])
   // 1. Store the data by storing we can acces the data 
   // now we have to execute function the data will be shown in browser
@@ -40,10 +40,12 @@ const Home = () => {
   }, [])
 
 
+
   
 //  for filtering the data
 
-const filteredData =  selectedCategory === "Popular" ? courseData.filter(item => item.Category==="Popular") :
+const filteredData =  selectedCategory === "Popular" ? 
+courseData.filter(item => item.Category==="Popular") :
 courseData.filter(item => item.Category === selectedCategory);
 
  
@@ -58,24 +60,27 @@ courseData.filter(item => item.Category === selectedCategory);
 {/* For header and navbar */}
 <div>
   <Header />
-  <div className=' p-6 bg-orange-300'>
-        <div className=' flex flex-row   justify-around'>
-          {
-            nav.map((item) => 
-              
-              <h1
-              key={item}
-              className={`text-xl font-semibold cursor-pointer  text-gray-900 ${selectedCategory === item ? "text-blue-500": " "} `}
-              onClick={() => setSelectedCategory(item)}
-              >{item}
-      
-              </h1>
-             
-            )
-          }
-     
-        </div>
-        </div>
+ {/* <Navbar navItems={navItems} setSelectedCategory={setSelectedCategory}   /> */}
+
+ <div className=' p-6 bg-orange-300'>
+    <div className=' flex flex-row   justify-around'>
+      {                  
+
+        navItems.map((item,index) => 
+          <h1
+          key={index}
+          className={`text-xl font-semibold cursor-pointer  text-gray-900 ${selectedCategory === item ? "text-blue-500": " "} `}
+          onClick={() => setSelectedCategory(item)}
+          >
+            {item}
+  
+          </h1>
+         
+        )
+      }
+ 
+    </div>
+
 
 </div>
  
@@ -99,13 +104,15 @@ courseData.filter(item => item.Category === selectedCategory);
  
    {
     filteredData.map((item , index) => 
-      <a target='blank' rel="noopener" href= {item.PerkLink}>
-{/* rel is for security purposes */}
-  {/* {  */}
-        {/* // item.Category === "Software-&-Tools" ?  */}
-        {/* // <h1 className='  text-xl  text-blue-500'>Popular</h1> */}
 
-      <div key={index} className=' relative   h-[450px]   w-[320px]  overflow-hidden    bg-white  shadow-xl   rounded-2xl    mb-8  ' >
+      // {
+
+      // }
+      <a key={index} target='blank' rel="noopener" href= {item.PerkLink}>
+{/* rel is for security purposes */}
+
+
+ <div  className=' relative   h-[450px]   w-[320px]  overflow-hidden    bg-white  shadow-xl   rounded-2xl    mb-8  ' >
 
     
                 {/* For the background image */}
@@ -127,20 +134,16 @@ courseData.filter(item => item.Category === selectedCategory);
 </div>
 
 </div>
-       {/* : null */}
-      {/* } */}
-
-
-
-
-</a>
-
+     </a>
 
 
     )
 
     
    }
+
+
+  
     </div>
 
 
