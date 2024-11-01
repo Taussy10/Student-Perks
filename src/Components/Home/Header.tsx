@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import Logo from "../../assets/img/Logo.png"
+import { addData } from '../../Appwrite/config'
 
 const Header = ({searchQuery , setSearchQuery }) => {
 const [value, setValue] = useState(null)
@@ -15,7 +16,9 @@ const [value, setValue] = useState(null)
 //   }
 
   return (
-    <div className=' p-4 bg-white'>
+    <div className='   bg-white'>
+            <button className='text-xl ' onClick={addData}>Add data</button>
+
   <div className=' bg-white flex  mr-16 ml-16   justify-between   items-center  flex-wrap'>
 
         <img src={Logo} alt="" className=' h-full w-48' />

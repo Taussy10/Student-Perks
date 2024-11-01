@@ -1,30 +1,55 @@
 export const courseData = [ 
 
   {
-  companyName: "Figma",
-  desc: "For creating UIs",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6722292b00006e8c6596/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/672231fa002e1e47c230/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  companyName: "THE The ECONOMIST",
+  desc: "Get 75% off",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724db70000508012e64/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e062001c742670d9/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://subscribenow.economist.com/student",
+  Category: "Education"
   
 },
-{
-  companyName: "Headspace",
-  desc: "Meditation App",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/67225e970001bbc39b9d/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/67223130001501b44a5f/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  {
+  companyName: "KAYAK",
+  desc: "get discount on flight tickets",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724daf900109723386e/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e2070007f40ba116/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://www.kayak.com/c/students/",
+  Category: "Shopping"
+  
 },
-{
-  companyName: "Jet Brains",
-  desc: "Code Editor app",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/67222da700228d9f0aff/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6722312100088083ca96/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  {
+  companyName: "Lenovo",
+  desc: "Get discounts on Lenovo products",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/67250b810026c7bbb134/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e0360037f6c1ddf6/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://www.lenovo.com/in/en/d/students-offer/?orgRef=https%253A%252F%252Ffreeforstudents.org%252F&irclickid=ziN1xoRu2xyKRy7xlkRSGyGHUkCWIc0s4S51Q80&irgwc=1&Program=9634&pid=2032346&acid=ww%3Aaffiliate%3Alx67i4&cid=in%3Aaffiliate%3Afiv7n7",
+  Category: "Shopping"
+  
 },
-{
-  companyName: "Amazon",
-  desc: "Ecommerce app",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/672228de0020ff8bb0eb/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/672232060004990d3357/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  {
+  companyName: "LUCIDCHART",
+  desc: "Create Flowcharts , Mindmaps for FREE",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724db0a001b9eca53a3/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e2120002769b7834/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://www.lucidchart.com/pages/usecase/education",
+  Category: "Software & Tools"
+  
 },
+
+
+
+
+
+
+// {
+//   companyName: "",
+//   desc: "",
+//   courseLogo: " ",
+//   courseBgImage: "",
+//   PerkLink: " ",
+//   Category: " "
+// }
 ]
 
 

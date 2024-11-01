@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = ({navItems , selectedCategory ,setSelectedCategory }) => {
   return (
-    <div className=' p-6 bg-white '>
+    <div className=' p-4 bg-white '>
     <div className=' flex flex-row   justify-around flex-wrap'>
       {                  
 

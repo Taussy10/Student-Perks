@@ -47,15 +47,18 @@ const Home = () => {
 
  // Filtering data based on selectedCategory and searchQuery(that yous searched)
  const filteredData = courseData.filter(item => 
-  ( item.Category === selectedCategory) &&
+  ( item.Category.trim() === selectedCategory) &&
   item.companyName.toLowerCase().includes(searchQuery.toLowerCase())
   // so here companyName to lowercase then searchQuery to lowerCase then by includes wheter both are same or not 
 );
 
 
 
-  console.log(searchQuery);
-  
+
+//   const isMicrosoftPresent = courseData.some(item => item.companyName === "MICROSOFT");
+// console.log(isMicrosoftPresent); // true if found, false if not
+console.log(courseData);
+
 
   return (
     <div className='    min-h-screen  bg-[#F3F4F6]   '>
@@ -88,8 +91,8 @@ const Home = () => {
  <div className=' flex  flex-row  justify-around p-4 flex-wrap    '>
  
    {
+    
     filteredData.map((item , index) => 
-
       // {
 
       // }
