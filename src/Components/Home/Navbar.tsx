@@ -1,17 +1,18 @@
 import React from 'react'
 
-const Navbar = ({navItems , selectedCategory }) => {
+const Navbar = ({navItems , selectedCategory ,setSelectedCategory }) => {
   return (
-    <div className=' p-6 bg-orange-300'>
-    <div className=' flex flex-row   justify-around'>
-      {
+    <div className=' p-6 bg-white '>
+    <div className=' flex flex-row   justify-around flex-wrap'>
+      {                  
+
         navItems.map((item,index) => 
-          
           <h1
           key={index}
-          className={`text-xl font-semibold cursor-pointer  text-gray-900 ${selectedCategory === item ? "text-blue-500": " "} `}
-          // onClick={() => selectedCategory(item)}
-          >{item}
+          className={`text-xl font-semibold cursor-pointer   ${selectedCategory === item ? "text-blue-500": "text-black "} `}
+          onClick={() => setSelectedCategory(item)}
+          >
+            {item}
   
           </h1>
          
@@ -19,7 +20,7 @@ const Navbar = ({navItems , selectedCategory }) => {
       }
  
     </div>
-    </div>
+</div>
   )
 }
 

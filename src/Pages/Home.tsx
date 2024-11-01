@@ -16,6 +16,8 @@ const Home = () => {
   // 1. Store the data by storing we can acces the data 
   // now we have to execute function the data will be shown in browser
 
+  const [searchQuery, setSearchQuery] = useState("");
+// created a state for saving the searchQueries (let's say Notion)
   useEffect(() => {
     const fetchData = async () => {
     try {
@@ -42,53 +44,36 @@ const Home = () => {
 
 
   
-//  for filtering the data
 
-const filteredData =  selectedCategory === "Popular" ? 
-courseData.filter(item => item.Category==="Popular") :
-courseData.filter(item => item.Category === selectedCategory);
+ // Filtering data based on selectedCategory and searchQuery(that yous searched)
+ const filteredData = courseData.filter(item => 
+  ( item.Category === selectedCategory) &&
+  item.companyName.toLowerCase().includes(searchQuery.toLowerCase())
+  // so here companyName to lowercase then searchQuery to lowerCase then by includes wheter both are same or not 
+);
 
- 
 
 
-
+  console.log(searchQuery);
   
 
   return (
-    <div className='    min-h-screen  bg-gray-500   '>
+    <div className='    min-h-screen  bg-[#F3F4F6]   '>
 
 {/* For header and navbar */}
 <div>
-  <Header />
- {/* <Navbar navItems={navItems} setSelectedCategory={setSelectedCategory}   /> */}
+  <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
 
- <div className=' p-6 bg-orange-300'>
-    <div className=' flex flex-row   justify-around'>
-      {                  
-
-        navItems.map((item,index) => 
-          <h1
-          key={index}
-          className={`text-xl font-semibold cursor-pointer  text-gray-900 ${selectedCategory === item ? "text-blue-500": " "} `}
-          onClick={() => setSelectedCategory(item)}
-          >
-            {item}
-  
-          </h1>
-         
-        )
-      }
- 
-    </div>
+<Navbar  navItems={navItems} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
 
 
-</div>
  
  <div className= 'ml-40 mr-40  '   >
-<div className=' flex flex-col   mb-12 '>
+
+{/* <div className=' flex flex-col   mb-12 '>
 <h1 className=' text-center  font-bold text-4xl'>Education</h1>
-<h1 className='  text-2xl'>Dive into a world of learning with discounted online courses, e-books, and study resources designed for students worldwide. Elevate your education without breaking the bank.</h1>
-</div>
+<h1 className='  text-2xl'>By being a student you can getperks</h1>
+</div> */}
 
 
 
@@ -100,7 +85,7 @@ courseData.filter(item => item.Category === selectedCategory);
       */}
 
       {/* To  */}
- <div className=' flex  flex-row  justify-around p-4 flex-wrap   bg-green-500 '>
+ <div className=' flex  flex-row  justify-around p-4 flex-wrap    '>
  
    {
     filteredData.map((item , index) => 
@@ -112,7 +97,7 @@ courseData.filter(item => item.Category === selectedCategory);
 {/* rel is for security purposes */}
 
 
- <div  className=' relative   h-[450px]   w-[320px]  overflow-hidden    bg-white  shadow-xl   rounded-2xl    mb-8  ' >
+ <div  className=' relative    h-full w-[320px]    flex flex-col      justify-between   overflow-hidden    bg-white  shadow-xl   rounded-2xl    mb-8  ' >
 
     
                 {/* For the background image */}
@@ -128,9 +113,9 @@ courseData.filter(item => item.Category === selectedCategory);
 {/* Card Content  */}
 <div className='  text-center p-4 mt-12  '>
 <p className=" text-2xl text-blue-600  font-bold">{item.companyName}</p>
-      {/* <h3 className=" font-semibold mt-5 text-xl">{item.desc}</h3> */}
+      <h3 className=" font-semibold mt-5 text-xl">{item.desc}</h3>
       {/* <h3 className=" font-semibold mt-3 text-xl"> Elevate your education without breaking the bank.Get unlimited pages & blocks, file uploads.</h3> */}
-      <h3 className=" font-semibold mt-3 text-xl">Get Notion Plus plan for free</h3>
+      {/* <h3 className=" font-semibold mt-3 text-xl">Get Notion Plus plan for free</h3> */}
 </div>
 
 </div>
