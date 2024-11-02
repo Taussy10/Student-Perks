@@ -3,7 +3,7 @@ import { loginUser  , getUser } from '../Appwrite/config'
 
 
 const Auth = () => {
-const [user, setUser] = useState(null)
+const [user, setUser] = useState("")
 
 useEffect(() => {
   const checkUser = async () => {
@@ -11,7 +11,9 @@ useEffect(() => {
    const userData = await getUser()
       setUser(userData)
     } catch (error) {
-      setUser(null)
+      // setUser(null)
+      console.log(error);
+      
     }
   }
 

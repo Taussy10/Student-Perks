@@ -1,46 +1,50 @@
 export const courseData = [ 
+// {
+//   companyName: "JOTFORM",
+//   desc: "Get Free Online Survey Tool for Students",
+//   courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724daf400069e7f394a/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+//   courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e01900167e8357c0/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+//   PerkLink: "https://www.jotform.com/surveys/free-survey-for-students/",
+//   Category: "Software & Tools"
+// },
 {
-  companyName: "CHESS.COM",
-  desc: "Get 50% Off on Premium Membership",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724dace002e16189148/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e014002b74b4bae1/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  PerkLink: "https://www.chess.com/students",
-  Category: "Entertainment"
+  companyName: "DISTROKID",
+  desc: "Get 50% off on uploading Musics and earn money",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724dadf000118e627a6/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e1fa002af8361f95/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://distrokid.com/edu/",
+  Category: "Software & Tools" 
 },
+// {
+//   companyName: "DATACAMP",
+//   desc: "Get 50% off on Datacamp and AI skills",
+//   courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724dad900261f364a4f/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+//   courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e1f3002672958b97/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+//   PerkLink: "https://www.datacamp.com/pricing/student?utm_term=",
+//   Category: "Education"
+// },
 {
-  companyName: "UNIDAYS",
-  desc: "Get Discounts from various top brands  ",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/67262b390007229aa519/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/67262b490025ac1c3eed/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  PerkLink: "https://www.myunidays.com/IN/en-IN/content/about",
-  Category: "Popular"
-},
-{
-  companyName: "ADOBE",
-  desc: "Get discounts on Adobe Products such as Photoshop",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/67222916003bed0f1681/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724dffc001e756648e6/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  PerkLink: "https://www.adobe.com/creativecloud/buy/students.html?sdid=49F59KY6",
-  Category: "Popular"
-},
-{
-  companyName: "MEDIUM",
-  desc: "Get a 25% discount off one year of Medium membership",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724db24001c04b323fe/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/672229b00034fc3ce821/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  PerkLink: "https://help.medium.com/hc/en-us/articles/12846216085143-Redeeming-student-discounts",
-  Category: "Popular"
-},
-{
-  companyName: "KICKRESUME",
-  desc: "Build Resume for FREE & Get FREE premium",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724db01002e18cf238b/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e20d001374e063ca/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  PerkLink: "https://www.kickresume.com/en/students/",
+  companyName: "MICROSOFT AZURE",
+  desc: "get $100 Azure Cloud Credit & Free Services",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/67222921002a725748a9/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e21b003a7381c16b/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://azure.microsoft.com/en-us/free/students/",
   Category: "Software & Tools"
 },
+
+
 ]
 
+// {
+//   companyName: "",
+//   desc: "",
+//   courseLogo: "",
+//   courseBgImage: "",
+//   PerkLink: " ",
+//   Category: " "
+// },
+
+// Left: Intel , Dashline ,Autodesk , Altair ,Lingvist, Basecamp , ynab
 // 6 words needed 
 
 // {

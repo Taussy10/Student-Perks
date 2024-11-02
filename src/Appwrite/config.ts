@@ -70,16 +70,13 @@ export const addData = async () => {
      databases.createDocument(
       appwriteConfig.databaseId, // Database ID
       appwriteConfig.collectionId, // Collection ID
+      [Query.limit(100)], // Set an appropriate limit to match your total number of documents
       ID.unique(), // Automatically generate unique ID
       data
     
     );
       
      });
-
-
-      
-   
     console.log( "Added all the data");
   } catch (error) {
     console.error("Error adding data:", error);

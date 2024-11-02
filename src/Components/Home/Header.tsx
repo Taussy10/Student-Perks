@@ -2,14 +2,14 @@ import React,{useState} from 'react'
 import Logo from "../../assets/img/Logo.png"
 import { addData } from '../../Appwrite/config'
 import {  account } from '../../Appwrite/config'
-import user from '../../Pages/Auth'
+// import user from '../../Pages/Auth'
 
 import { useNavigate } from 'react-router-dom'
 const Header = ({searchQuery , setSearchQuery }) => {
 const [value, setValue] = useState(null)
 const navigate = useNavigate()
 
-console.log(user);
+// console.log(user);
 
 // You have declre useNavigate here 
 //   function getInputData(val: string) {
