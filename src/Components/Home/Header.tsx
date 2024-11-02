@@ -17,7 +17,7 @@ const [value, setValue] = useState(null)
 
   return (
     <div className='   bg-white'>
-            <button className='text-xl ' onClick={addData}>Add data</button>
+            {/* <button className='text-xl ' onClick={addData}>Add data</button> */}
 
   <div className=' bg-white flex  mr-16 ml-16   justify-between   items-center  flex-wrap'>
 

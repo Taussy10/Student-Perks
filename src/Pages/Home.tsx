@@ -88,7 +88,7 @@ console.log(courseData);
       */}
 
       {/* To  */}
- <div className=' flex  flex-row  justify-around p-4 flex-wrap    '>
+ <div className=' flex  flex-row  justify-around p-4 flex-wrap     gap-5  '>
  
    {
     
@@ -100,9 +100,8 @@ console.log(courseData);
 {/* rel is for security purposes */}
 
 
- <div  className=' relative    h-full w-[320px]    flex flex-col      justify-between   overflow-hidden    bg-white  shadow-xl   rounded-2xl    mb-8  ' >
+ <div  className=' relative     h-full w-[320px]    flex flex-col      justify-between   overflow-hidden    bg-white  shadow-xl    rounded-2xl    mb-8  ' >
 
-    
                 {/* For the background image */}
 <div >
 <img src= {item.courseBgImage} alt="bg-course-image" className='  h-56 object-cover  w-full' />

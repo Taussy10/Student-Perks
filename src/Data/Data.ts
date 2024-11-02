@@ -1,46 +1,45 @@
 export const courseData = [ 
-
-  {
-  companyName: "THE The ECONOMIST",
-  desc: "Get 75% off",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724db70000508012e64/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e062001c742670d9/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  PerkLink: "https://subscribenow.economist.com/student",
-  Category: "Education"
-  
-},
-  {
-  companyName: "KAYAK",
-  desc: "get discount on flight tickets",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724daf900109723386e/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e2070007f40ba116/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  PerkLink: "https://www.kayak.com/c/students/",
-  Category: "Shopping"
-  
-},
-  {
-  companyName: "Lenovo",
-  desc: "Get discounts on Lenovo products",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/67250b810026c7bbb134/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e0360037f6c1ddf6/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  PerkLink: "https://www.lenovo.com/in/en/d/students-offer/?orgRef=https%253A%252F%252Ffreeforstudents.org%252F&irclickid=ziN1xoRu2xyKRy7xlkRSGyGHUkCWIc0s4S51Q80&irgwc=1&Program=9634&pid=2032346&acid=ww%3Aaffiliate%3Alx67i4&cid=in%3Aaffiliate%3Afiv7n7",
-  Category: "Shopping"
-  
-},
-  {
-  companyName: "LUCIDCHART",
-  desc: "Create Flowcharts , Mindmaps for FREE",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724db0a001b9eca53a3/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e2120002769b7834/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  PerkLink: "https://www.lucidchart.com/pages/usecase/education",
+{
+  companyName: "EVERNOTE",
+  desc: "Get 40% discount on Evernote Professional",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724dae500109552b95d/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e2000012709d4263/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://evernote.com/unidays",
   Category: "Software & Tools"
-  
 },
-
-
-
-
-
+{
+  companyName: "APPLE MUSIC",
+  desc: "Get discounts on Apple Music subscription",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/67222cac003af6af0d0d/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e1cb0013fd84fc8b/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://support.apple.com/en-us/106008",
+  Category: "Entertainment"
+},
+{
+  companyName: "SAMSUNG",
+  desc: "Get discounts on Samsung products",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724db46000a03044335/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e25a000a7d4a7a2b/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://www.samsung.com/in/offer/student-discount/",
+  Category: "Shopping"
+},
+{
+  companyName: "SURFSHARK",
+  desc: "Get 79% off and 2 months FREE",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724db56001f0b2ecc0f/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e26a001f7c185e5e/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://surfshark.com/student-discount",
+  Category: "Software & Tools"
+},
+{
+  companyName: "GITHUB",
+  desc: "Get various softwares for FREE",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6725d3040012491bbe7a/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6725d3200036444642a8/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://education.github.com/pack",
+  Category: "Popular"
+},
+]
 
 // {
 //   companyName: "",
@@ -49,9 +48,7 @@ export const courseData = [
 //   courseBgImage: "",
 //   PerkLink: " ",
 //   Category: " "
-// }
-]
-
+// },
 
 
 
