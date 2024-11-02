@@ -8,7 +8,7 @@ const [user, setUser] = useState(null)
 useEffect(() => {
   const checkUser = async () => {
     try {
-      const userData = await getUser()
+   const userData = await getUser()
       setUser(userData)
     } catch (error) {
       setUser(null)
@@ -17,6 +17,8 @@ useEffect(() => {
 
   checkUser()
 }, [])
+
+
 
   return (
     <div>

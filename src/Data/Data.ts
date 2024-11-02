@@ -1,45 +1,47 @@
 export const courseData = [ 
 {
-  companyName: "EVERNOTE",
-  desc: "Get 40% discount on Evernote Professional",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724dae500109552b95d/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e2000012709d4263/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  PerkLink: "https://evernote.com/unidays",
-  Category: "Software & Tools"
-},
-{
-  companyName: "APPLE MUSIC",
-  desc: "Get discounts on Apple Music subscription",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/67222cac003af6af0d0d/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e1cb0013fd84fc8b/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  PerkLink: "https://support.apple.com/en-us/106008",
+  companyName: "CHESS.COM",
+  desc: "Get 50% Off on Premium Membership",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724dace002e16189148/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e014002b74b4bae1/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://www.chess.com/students",
   Category: "Entertainment"
 },
 {
-  companyName: "SAMSUNG",
-  desc: "Get discounts on Samsung products",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724db46000a03044335/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e25a000a7d4a7a2b/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  PerkLink: "https://www.samsung.com/in/offer/student-discount/",
-  Category: "Shopping"
-},
-{
-  companyName: "SURFSHARK",
-  desc: "Get 79% off and 2 months FREE",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724db56001f0b2ecc0f/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e26a001f7c185e5e/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  PerkLink: "https://surfshark.com/student-discount",
-  Category: "Software & Tools"
-},
-{
-  companyName: "GITHUB",
-  desc: "Get various softwares for FREE",
-  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6725d3040012491bbe7a/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6725d3200036444642a8/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
-  PerkLink: "https://education.github.com/pack",
+  companyName: "UNIDAYS",
+  desc: "Get Discounts from various top brands  ",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/67262b390007229aa519/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/67262b490025ac1c3eed/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://www.myunidays.com/IN/en-IN/content/about",
   Category: "Popular"
 },
+{
+  companyName: "ADOBE",
+  desc: "Get discounts on Adobe Products such as Photoshop",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/67222916003bed0f1681/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724dffc001e756648e6/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://www.adobe.com/creativecloud/buy/students.html?sdid=49F59KY6",
+  Category: "Popular"
+},
+{
+  companyName: "MEDIUM",
+  desc: "Get a 25% discount off one year of Medium membership",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724db24001c04b323fe/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/672229b00034fc3ce821/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://help.medium.com/hc/en-us/articles/12846216085143-Redeeming-student-discounts",
+  Category: "Popular"
+},
+{
+  companyName: "KICKRESUME",
+  desc: "Build Resume for FREE & Get FREE premium",
+  courseLogo: "https://cloud.appwrite.io/v1/storage/buckets/672103ef00154b687be2/files/6724db01002e18cf238b/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  courseBgImage: "https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6724e20d001374e063ca/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin",
+  PerkLink: "https://www.kickresume.com/en/students/",
+  Category: "Software & Tools"
+},
 ]
+
+// 6 words needed 
 
 // {
 //   companyName: "",
