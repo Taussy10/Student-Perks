@@ -36,12 +36,16 @@ const logoutUser = async() => {
 
   return (
     <div className='   bg-white'>
-            <button className='text-xl ' onClick={logoutUser}>Logout User</button>
-            <button className='text-xl ' onClick={addData}>Add data</button>
+      
+            
+      {/* <button className=' w-36 h-12 bg-blue-500 text-white font-bold text-xl rounded-xl  ' onClick={logoutUser}>
+              <h1>Logout User</h1>
+              </button>
+            <button className='text-xl ' onClick={addData}>Add data</button> */}
 
   <div className=' bg-white flex  mr-16 ml-16   justify-between   items-center  flex-wrap'>
 
-        <img src={Logo} alt="" className=' h-full w-48' />
+        <img onClick={logoutUser} src={Logo} alt="" className=' h-full w-48 cursor-pointer' />
 
 <h1 className=' text-5xl  text-blue-500  font-semibold'>Student Perks </h1>
 <div className=' '>
