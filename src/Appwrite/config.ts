@@ -1,6 +1,7 @@
 import { Client, Account, OAuthProvider, Databases, ID , Query , Storage } from 'appwrite';
 import { courseData } from '../Data/Data';
-
+import {  useNavigate } from 'react-router-dom';
+// Use navigate hook can only work in JSX component not in standalone functin
 
 const appwriteConfig = {
  endPoint: import.meta.env.VITE_Endpoint,
@@ -17,6 +18,48 @@ export const client = new Client()
 export const account = new Account(client);
 export const databases = new Databases(client);
 export const storage = new Storage(client)
+
+export const loginUser = async(e) => {
+  try {
+    // e.preventDefault()
+    await account.createOAuth2Session(
+      OAuthProvider.Google,
+      "http://localhost:5173",
+      "http://localhost:5173/auth",
+
+      // Always use http not https cause for https you need 
+      // SSL certificate and that you don't have that's why
+      // BTW what's SSL certificate? a certi that says this site is secur 
+      // and give https protocol 
+
+    
+    )
+  } catch (error) {
+    // console.log(error , "Getting error while authrization");
+    console.error("Error adding data:", error.message, error.code, error.response);
+
+    
+  }
+
+}
+
+
+
+
+export const getUser = async () => {
+  try {
+    return await account.get()
+  } catch (error) {
+    console.error(error)
+  }
+}
+
+
+
+
+
+
+
 
 
 
@@ -85,4 +128,3 @@ export const listData = async () => {
 
 
 
-// Notion , Fotor , Figma , Headspace , JetBrains , Amazon

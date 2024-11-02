@@ -6,6 +6,7 @@ import { createBrowserRouter , Router, RouterProvider } from 'react-router-dom'
 import Home from './Pages/Home.tsx'
 import Error from './Pages/Error.tsx'
 import Test from './Pages/Test.tsx'
+import Auth from './Pages/Auth.tsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -13,13 +14,13 @@ const router = createBrowserRouter([
     errorElement: <Error/>
   },
   {
-    path: "/education",
-    element: <Home/>
+    path: "/auth",
+    element: <Auth/>
   },
-  // {
-  //   path: '/:id',
-  //   element: <Test/>
-  // }
+  {
+    path: '/error',
+    element: <Error/>
+  }
  
 ])
 

@@ -138,7 +138,7 @@ console.log(courseData);
 
       </div>
     </div>
-    // </div>
+     </div>
   )
 }
 
