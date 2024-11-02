@@ -112,7 +112,10 @@ export const listData = async () => {
     appwriteConfig.collectionId, // Collection ID
   //  Want to list all data that is in database 
   // so don't use query then it will list all the data 
-
+  [
+    Query.limit(50),
+    Query.offset(0)
+]
     );
     return gotData.documents
     // console.log( gotData.documents ,"Got all data bhai");
