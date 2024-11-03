@@ -1,13 +1,46 @@
-import React,{useState} from 'react'
+import React,{useState , useEffect} from 'react'
 import Logo from "../../assets/img/Logo.png"
 import { addData } from '../../Appwrite/config'
-import {  account } from '../../Appwrite/config'
+import {  account , getUser } from '../../Appwrite/config'
 // import user from '../../Pages/Auth'
 
-import { useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 const Header = ({searchQuery , setSearchQuery }) => {
 const [value, setValue] = useState(null)
+const [user, setUser] = useState(null)
 const navigate = useNavigate()
+
+// Why do we use useEffect ?
+// so that whenever we visit page then it a function should 
+// execute by default(basically by side effect) that fun is genrally API call 
+// then you can store to do your work 
+
+useEffect(() => {
+  // make sure that you make async so that function only execute when data get call
+async function  fetchUser () {
+ const  userId= await getUser();
+  setUser(userId)
+
+}
+
+fetchUser()
+
+}, [])
+
+console.log(user, "got the user");
+
+
+// make sure to check the user
+// because we got in object form so we have to use object property
+
+
+
+if (user) {
+  console.log("User ID:", user.$id);
+  console.log("User Name:", user.name); // Adjust these property names based on actual structure
+}
+// the data we get by promise is in array so we can't use arrays method to sue
+
 
 // console.log(user);
 
@@ -34,6 +67,7 @@ const logoutUser = async() => {
 }
 
 
+
   return (
     <div className='   bg-white'>
       
@@ -42,6 +76,7 @@ const logoutUser = async() => {
               <h1>Logout User</h1>
               </button>
             <button className='text-xl ' onClick={addData}>Add data</button> */}
+
 
   <div className=' bg-white flex  mr-16 ml-16   justify-between   items-center  flex-wrap'>
 

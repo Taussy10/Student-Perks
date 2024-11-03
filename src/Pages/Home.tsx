@@ -58,7 +58,7 @@ const Home = () => {
 
 //   const isMicrosoftPresent = courseData.some(item => item.companyName === "MICROSOFT");
 // console.log(isMicrosoftPresent); // true if found, false if not
-console.log(courseData , "got the data");
+// console.log(courseData , "got the data");
 
 
   return (
