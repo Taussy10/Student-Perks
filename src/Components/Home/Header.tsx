@@ -56,6 +56,9 @@ if (user) {
 //   }
 
 // What is async await and try catch function
+
+
+
 const logoutUser = async() => {
   try {
     await account.deleteSession('current')
@@ -65,7 +68,6 @@ const logoutUser = async() => {
     
   }
 }
-
 
 
   return (

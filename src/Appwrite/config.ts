@@ -19,7 +19,7 @@ export const account = new Account(client);
 export const databases = new Databases(client);
 export const storage = new Storage(client)
 
-export const loginUser = async(e) => {
+export const loginUser = async() => {
   try {
     // e.preventDefault()
     await account.createOAuth2Session(

@@ -8,7 +8,7 @@ import { useAuth , name } from '../Contexts/AuthContexts';
 // cause both thigns don't work each other together 
 
 const Auth = () => {
-const [user, setUser] = useState("")
+const [user, setUser] = useState(null)
 
 useEffect(() => {
   const checkUser = async () => {
@@ -26,18 +26,17 @@ useEffect(() => {
 }, [])
 
 
-console.log(name());
+
 
   return (
     <div className=' min-h-screen   flex  flex-col    items-center'>
       {user ? (
         <>
-          <p>Welcome, {user.name}!</p>
-          <button onClick={logoutUser}>Logout</button>
+          <p>Welcome, bro!</p>
         </>
       ) : (
-        <>
-          <div className=' flex flex-col    items-center'>
+       <>
+<div className=' flex flex-col    items-center'>
 
 
 <img src={logo} alt="logo"  className='   text-gray-800 h-60 mb-2   '/>
@@ -49,14 +48,13 @@ console.log(name());
 
 <button  onClick={loginUser}  className='   shadow-lg  bg-[#F3F4F6] w-[500px] h-24 flex items-center justify-center rounded-2xl ' >
 
- 
+
 <FcGoogle  size={80}  />
-{/* <img src={google} alt="Google-Icon" /> */}
 <h1 className=' text-4xl font-semibold text-blue-500'>Signup with Google</h1>
 
 
 </button>
-        </>
+</> 
       )}
 
 
@@ -68,33 +66,25 @@ console.log(name());
 
 export default Auth
 
-{/* <div className=' min-h-screen   flex  flex-col    items-center'>
-{/* {user ? (
-  <>
-    <p>Welcome, {user.name}!</p>
-    <button onClick={logoutUser}>Logout</button>
-  </>
-) : (
-  <button onClick={loginUser}>Login with Google</button>
-)} */}
 
-{/* <img src={logo} alt="logo"  className='   text-gray-800 h-full mb-2   '/>
-<div className=' flex flex-col gap-3 mb-32 '>
-<h1 className='  text-2xl font-bold text-blue-500  '>Why spend Money when you can Save it ? </h1>
-<h1 className='  text-2xl text-blue-500 font-bold'>Discover hundreds of exclusive Student Perks!</h1>
+
+{/* <>
+<div className=' flex flex-col    items-center'>
+
+
+<img src={logo} alt="logo"  className='   text-gray-800 h-60 mb-2   '/>
+<div className=' flex flex-col gap-3 mb-40 '>
+<h1 className='  text-3xl font-bold text-blue-500  '>Why spend Money when you can Save it ? </h1>
+<h1 className='  ml-10 text-2xl text-blue-500 font-bold'>Discover hundreds of exclusive <span className=' font-bold'>Student Perks!</span> </h1>
 </div>
-<div className='  shadow-2xl  bg-[#F3F4F6] w-[500px] h-24
- flex    justify-around items-center 
-  rounded-3xl
-'>
-  <img src={google} alt= "Google-Icon" 
-  className=' h-32 '
-  />
+</div>
 
+<button  onClick={loginUser}  className='   shadow-lg  bg-[#F3F4F6] w-[500px] h-24 flex items-center justify-center rounded-2xl ' >
+
+
+<FcGoogle  size={80}  />
 <h1 className=' text-4xl font-semibold text-blue-500'>Signup with Google</h1>
 
 
-</div>
-
-
-</div> */} 
+</button>
+</> */}
