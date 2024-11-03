@@ -3,6 +3,7 @@ import { listData,  } from '../Appwrite/config'
 import Header from '../Components/Home/Header'
 import Navbar from '../Components/Home/Navbar'
 import { Link } from 'react-router-dom'
+import Footer from '../Components/Home/Footer'
 
 // just run the function you will get the data
 // but  how to display data
@@ -61,7 +62,7 @@ console.log(courseData , "got the data");
 
 
   return (
-    <div className='    min-h-screen  bg-[#F3F4F6]   '>
+    <div className='    min-h-screen  bg-[#F3F4F6]    '>
 
 {/* For header and navbar */}
 <div>
@@ -71,7 +72,7 @@ console.log(courseData , "got the data");
 
 
  
- <div className= 'ml-40 mr-40  '   >
+ <main className= 'ml-40 mr-40  '   >
 
 {/* <div className=' flex flex-col   mb-12 '>
 <h1 className=' text-center  font-bold text-4xl'>Education</h1>
@@ -88,7 +89,7 @@ console.log(courseData , "got the data");
       */}
 
       {/* To  */}
- <div className=' flex  flex-row  justify-around p-4 flex-wrap     gap-5  '>
+ <div className='  flex   flex-row  justify-around p-4 flex-wrap     gap-5  '>
  
    {
     
@@ -136,7 +137,8 @@ console.log(courseData , "got the data");
 
 
 
-      </div>
+      </main>
+      <Footer/>
     </div>
      </div>
   )

@@ -40,17 +40,18 @@ useEffect(() => {
 <h1 className='  ml-10 text-2xl text-blue-500 font-bold'>Discover hundreds of exclusive Student Perks!</h1>
 </div>
 </div>
+{/* onClick={loginUser}   ml-3 */}
+{/* <div  className='  cursor-pointer shadow-2xl  bg-[#F3F4F6] w-[500px] h-24
+ flex   items-center   '>
 
-<div onClick={loginUser} className='    ml-3 cursor-pointer shadow-2xl  bg-[#F3F4F6] w-[500px] h-24
- flex    justify-around items-center 
-  rounded-3xl
-'>
-  <img src={google} alt= "Google-Icon" 
-  className=' h-32 '
-  />
-
+  <img src={google} alt= "Google-Icon"  className=' h-32 '/>
 <h1 className=' text-4xl font-semibold text-blue-500'>Signup with Google</h1>
 
+
+</div> */}
+<div className=' bg-green-500 h-32   w-100  flex items-center '>
+<img src={google} alt="Google-Icon" className="bg-blue-300 h-20 object-contain block" />
+<h1 className=' text-4xl font-semibold text-blue-500'>Signup with Google</h1>
 
 </div>
         </>
