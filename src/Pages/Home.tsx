@@ -62,7 +62,7 @@ console.log(courseData , "got the data");
 
 
   return (
-    <div className='    min-h-screen  bg-[#F3F4F6]    '>
+    <div className='    min-h-screen  bg-[#F3F4F6]   pb-16   '>
 
 {/* For header and navbar */}
 <div>
@@ -138,7 +138,10 @@ console.log(courseData , "got the data");
 
 
       </main>
+      <div className='  fixed bottom-0  w-full   '>
+
       <Footer/>
+      </div>
     </div>
      </div>
   )
