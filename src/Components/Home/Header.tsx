@@ -62,7 +62,10 @@ if (user) {
 const logoutUser = async() => {
   try {
     await account.deleteSession('current')
+    window.location.reload()
+    // after deleting session the page will refresh itself 
     navigate('/auth')
+    // and navigate to auth page 
   } catch (error) {
     console.log(error , "Getting error while authrization");
     
@@ -82,7 +85,7 @@ const logoutUser = async() => {
 
   <div className=' bg-white flex  mr-16 ml-16   justify-between   items-center  flex-wrap'>
 
-        <img onClick={logoutUser} src={Logo} alt="" className=' h-full w-48 cursor-pointer' />
+        <img onClick={ logoutUser} src={Logo} alt="" className=' h-full w-48 cursor-pointer' />
 
 <h1 className=' text-5xl  text-blue-500  font-semibold'>Student Perks </h1>
 <div className=' '>
