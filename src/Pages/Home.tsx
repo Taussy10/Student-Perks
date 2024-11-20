@@ -73,7 +73,7 @@ console.log(courseData , "Data");
 
 
  
- <main className= 'ml-40 mr-40  '   >
+ <main className= ' sm:ml-40 sm:mr-40    '   >
 
 {/* <div className=' flex flex-col   mb-12 '>
 <h1 className=' text-center  font-bold text-4xl'>Education</h1>
@@ -92,7 +92,8 @@ console.log(courseData , "Data");
       {/* To  */}
  <div className='  flex   flex-row  justify-around p-4 flex-wrap     gap-5  '>
  
-   {
+{/* put here Data */}
+{
     
     filteredData.map((item , index) => 
       // {
@@ -102,7 +103,7 @@ console.log(courseData , "Data");
 {/* rel is for security purposes */}
 
 
- <div  className=' relative     h-full w-[320px]    flex flex-col      justify-between   overflow-hidden    bg-white  shadow-xl    rounded-2xl    mb-8  ' >
+ <div  className=' relative     h-full  sm:w-[320px]    flex flex-col      justify-between   overflow-hidden      bg-white  shadow-xl    rounded-2xl    mb-8  ' >
 
                 {/* For the background image */}
 <div >
@@ -130,7 +131,6 @@ console.log(courseData , "Data");
 
     
    }
-
 
   
     </div>

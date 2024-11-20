@@ -83,16 +83,16 @@ const logoutUser = async() => {
             <button className='text-xl ' onClick={addData}>Add data</button> */}
 
 
-  <div className=' bg-white flex  mr-16 ml-16   justify-between   items-center  flex-wrap'>
+  <div className='  flex    sm:*:flex-col   sm:mr-16 ml-16    justify-between   items-center flex-wrap  '>
 
         <img onClick={ logoutUser} src={Logo} alt="" className=' h-full w-48 cursor-pointer' />
 
-<h1 className=' text-5xl  text-blue-500  font-semibold'>Student Perks </h1>
+<h1 className=' text-3xl mb-5 sm:text-5xl  text-blue-500  font-bold'>Student Perks </h1>
 <div className=' '>
 
 <input type="text"
 placeholder='Search the Perks'
-className=' bg-[#F3F4F6]   pr-10 pl-10 p-2     outline-none rounded-xl'
+className=' bg-[#F3F4F6]   p-2     outline-none rounded-xl'
 
 value={searchQuery}
 // For the storing state variable basiclly storing input value so here it will use state variable
