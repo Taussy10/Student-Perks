@@ -63,7 +63,7 @@ console.log(courseData , "Data");
   
 
  // Filtering data based on selectedCategory and searchQuery(that yous searched)
- const filteredData = courseData.filter(item => 
+ const filteredData = courseData.filter((item: { Category: string; companyName: string }) => 
   ( item.Category.trim() === selectedCategory) &&
   item.companyName.toLowerCase().includes(searchQuery.toLowerCase())
   // so here companyName to lowercase then searchQuery to lowerCase then by includes wheter both are same or not 
