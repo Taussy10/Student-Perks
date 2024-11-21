@@ -1,4 +1,4 @@
-import React, { StrictMode, useState, useEffect } from 'react';
+import { StrictMode, useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, createRoutesFromElements, Navigate, Route, RouterProvider } from 'react-router-dom';
 import Home from './Pages/Home.tsx';
@@ -8,8 +8,14 @@ import { getUser } from './Appwrite/config.ts';
 import Layout from './Layout.tsx';
 import './index.css';
 
+interface User {
+  $id: string ,
+  name: string ,
+  email: string ,
+
+}
 const App = () => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState<User| null>(null);
   const [loading, setLoading] = useState(true); // To handle loading state while checking authentication
 
   useEffect(() => {
@@ -39,7 +45,7 @@ const App = () => {
           // index 
           path='/'
           // index is use for parent route instead you can also use  path='/'
-          element={user ? <Home /> : <Navigate to="/auth" replace />} 
+          element={user ? <Home id={0} name={'home'} /> : <Navigate to="/auth" replace />} 
           // if user is there then will go home otherwwise will go to /auth 
         />
         {/* Route takes two props: 

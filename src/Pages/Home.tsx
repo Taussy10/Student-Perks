@@ -1,23 +1,39 @@
-import React,{useState , useEffect} from 'react'
+import {useState , useEffect, FC} from 'react'
 import { listData,  } from '../Appwrite/config'
 import Header from '../Components/Home/Header'
 import Navbar from '../Components/Home/Navbar'
-import { Link } from 'react-router-dom'
 import Footer from '../Components/Home/Footer'
 
 // just run the function you will get the data
 // but  how to display data
 //{/* by using tailwind css h1 , h2 power end and all of them are p tag */}
 
-const Home = () => {
+type Data = {
+  id: number;
+  name: string;
+}
+
+type Search = {
+  searchQuery: any,
+  setSearchQuery: React.Dispatch<React.SetStateAction<string>>; 
+}
+
+interface PerkData {
+  PerkLink: string;
+  courseBgImage: string;
+  courseLogo: string;
+  companyName: string;
+  desc: string;
+}
+const Home:FC<Data> = () => {
   const [selectedCategory, setSelectedCategory] = useState("Popular");
   // by default ALL 
   const navItems = ["Popular", "Education", "Software & Tools", "Entertainment", "Health & Wellbeing", "Shopping"];
-  const [courseData, setCourseData] = useState([])
+  const [courseData, setCourseData] = useState< any | undefined > ([])
   // 1. Store the data by storing we can acces the data 
   // now we have to execute function the data will be shown in browser
 
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState<string>("");
 // created a state for saving the searchQueries (let's say Notion)
   useEffect(() => {
     const fetchData = async () => {
@@ -31,6 +47,8 @@ const Home = () => {
         setCourseData(listedData)  
         // dta inside courseData array 
       }
+      // Argument of type 'Document[] | undefined' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  // Type 'undefined' is not assignable to type 'SetStateAction<never[]>'
       
       
    catch (error) {
@@ -95,7 +113,7 @@ console.log(courseData , "Data");
 {/* put here Data */}
 {
     
-    filteredData.map((item , index) => 
+    filteredData.map((item: [] , index: number) => 
       // {
 
       // }

@@ -1,29 +1,40 @@
-import React,{useState , useEffect} from 'react'
+import {useState , useEffect} from 'react'
 import { loginUser  , getUser } from '../Appwrite/config'
-import google from "../assets/img/Google-icon.png"
 import logo from "../assets/img/logo.png"
 import { FcGoogle } from "react-icons/fc";
-import { useAuth , name } from '../Contexts/AuthContexts';
 // make sure that if you working it ts then work only in ts not js 
 // cause both thigns don't work each other together 
 
+
+interface User {
+  $id: string;
+  name: string;
+  email: string;
+  prefs?: Record<string, any>; // Adjust based on the Appwrite prefs type
+}
+// You have to provide types 
+
 const Auth = () => {
-const [user, setUser] = useState(null)
+  const [user, setUser] = useState<User | null>(null);
 
 useEffect(() => {
   const checkUser = async () => {
     try {
    const userData = await getUser()
-      setUser(userData)
+   if (user != null) {
+    setUser(userData)
+   }
     } catch (error) {
-      // setUser(null)
       console.log(error);
-      
     }
   }
 
   checkUser()
 }, [])
+
+
+
+
 
 
 

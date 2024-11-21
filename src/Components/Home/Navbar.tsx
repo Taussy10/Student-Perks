@@ -9,7 +9,7 @@ const Navbar = ({ navItems, selectedCategory, setSelectedCategory }) => {
     <div className='p-4 bg-white'>
       {/* Desktop Navbar */}
       <div className='hidden md:flex flex-row justify-around'>
-        {navItems.map((item, index) => (
+        {navItems.map((item: [], index:string) => (
           <h1
             key={index}
             className={`text-xl font-semibold cursor-pointer ${selectedCategory === item ? 'text-blue-500' : 'text-black'}`}
@@ -38,7 +38,7 @@ const Navbar = ({ navItems, selectedCategory, setSelectedCategory }) => {
       <div
         className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} flex-col items-center mt-4`}
       >
-        {navItems.map((item, index) => (
+        {navItems.map((item:[], index:number) => (
           <h1
             key={index}
             className={`text-xl font-semibold cursor-pointer ${selectedCategory === item ? 'text-blue-500 ' : 'text-black'} transition-all mb-4`}

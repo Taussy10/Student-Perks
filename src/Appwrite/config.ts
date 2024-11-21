@@ -1,6 +1,7 @@
 import { Client, Account, OAuthProvider, Databases, ID , Query , Storage } from 'appwrite';
 import { courseData } from '../Data/Data';
-import {  useNavigate } from 'react-router-dom';
+// import { LiaSteam } from 'react-icons/lia';
+
 // Use navigate hook can only work in JSX component not in standalone functin
 
 const appwriteConfig = {
@@ -34,7 +35,8 @@ export const loginUser = async() => {
 
     
     )
-  } catch (error) {
+  } catch (error:any) {
+    // Catch clause variable type annotation must be 'any' or 'unknown' if specified.
     // console.log(error , "Getting error while authrization");
     console.error("Error adding data:", error.message, error.code, error.response);
 
@@ -43,14 +45,22 @@ export const loginUser = async() => {
 
 }
 
+interface User {
+  $id: string;
+  name: string;
+  email: string;
+  prefs?: Record<string, any>; // Adjust based on the Appwrite prefs type
+}
 
 
 
 export const getUser = async () => {
   try {
-    return await account.get()
-  } catch (error) {
+    const user: User = await account.get();
+    return user
+  } catch (error:any) {
     console.error(error)
+    return null
   }
 }
 
@@ -70,10 +80,10 @@ export const addData = async () => {
      databases.createDocument(
       appwriteConfig.databaseId, // Database ID
       appwriteConfig.collectionId, // Collection ID
-      [Query.limit(100)], // Set an appropriate limit to match your total number of documents
+      // [Query.limit(100)], // Set an appropriate limit to match your total number of documents
       ID.unique(), // Automatically generate unique ID
       data
-    
+      // Argument of type 'string[]' is not assignable to parameter of type 'string'.ts(2345)
     );
       
      });
@@ -107,6 +117,7 @@ export const updateData = async () => {
 
 export const listData = async () => {
   try {
+ 
   const gotData =   await databases.listDocuments(
     appwriteConfig.databaseId, // Database ID
     appwriteConfig.collectionId, // Collection ID
@@ -117,7 +128,10 @@ export const listData = async () => {
     Query.offset(0)
 ]
     );
-    return gotData.documents
+    if (gotData) {
+      return gotData.documents
+    }
+  
     // console.log( gotData.documents ,"Got all data bhai");
   } catch (error) {
     console.error("Error adding data:", error);

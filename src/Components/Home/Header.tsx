@@ -1,13 +1,22 @@
-import React,{useState , useEffect} from 'react'
+import { FC} from 'react'
 import Logo from "../../assets/img/Logo.png"
-import { addData } from '../../Appwrite/config'
-import {  account , getUser } from '../../Appwrite/config'
+import {  account ,  } from '../../Appwrite/config'
+// import {   getUser } from '../../Appwrite/config'
 // import user from '../../Pages/Auth'
 
-import { NavLink, useNavigate } from 'react-router-dom'
-const Header = ({searchQuery , setSearchQuery }) => {
-const [value, setValue] = useState(null)
-const [user, setUser] = useState(null)
+import {  useNavigate } from 'react-router-dom'
+
+// You have to define types of props 
+interface HeaderProps {
+  searchQuery: string;
+  setSearchQuery: React.Dispatch<React.SetStateAction<string>>; 
+    //  void // Type for the function that updates the state
+  // React.Dispatch<React.SetStateAction<string>>; 
+}
+
+
+const Header:FC<HeaderProps> = ({searchQuery , setSearchQuery }) => {
+// const [user, setUser] = useState(null)
 const navigate = useNavigate()
 
 // Why do we use useEffect ?
@@ -15,19 +24,22 @@ const navigate = useNavigate()
 // execute by default(basically by side effect) that fun is genrally API call 
 // then you can store to do your work 
 
-useEffect(() => {
-  // make sure that you make async so that function only execute when data get call
-async function  fetchUser () {
- const  userId= await getUser();
-  setUser(userId)
+// useEffect(() => {
+//   // make sure that you make async so that function only execute when data get call
+// async function  fetchUser () {
+//  const  userId = await getUser();
+//   setUser(userId)
+// // Argument of type 'User<Preferences> | undefined' is not assignable to parameter of type 'SetStateAction<null>'.
+//   // Type 'undefined' is not assignable to type 'SetStateAction<null>'.
+// }
+// // Argument of type 'User<Preferences> | undefined' is not assignable to parameter of type 'SetStateAction<null>'.
+//   // Type 'undefined' is not assignable to type 'SetStateAction<null>
 
-}
+// fetchUser()
 
-fetchUser()
+// }, [])
 
-}, [])
-
-console.log(user, "got the user");
+// console.log(user, "got the user");
 
 
 // make sure to check the user
@@ -35,10 +47,10 @@ console.log(user, "got the user");
 
 
 
-if (user) {
-  console.log("User ID:", user.$id);
-  console.log("User Name:", user.name); // Adjust these property names based on actual structure
-}
+// if (user) {
+//   console.log("User ID:", user.$id);
+//   console.log("User Name:", user.name); // Adjust these property names based on actual structure
+// }
 // the data we get by promise is in array so we can't use arrays method to sue
 
 
@@ -72,6 +84,7 @@ const logoutUser = async() => {
   }
 }
 
+console.log(searchQuery);
 
   return (
     <div className='   bg-white'>
@@ -96,8 +109,8 @@ className=' bg-[#F3F4F6]   p-2     outline-none rounded-xl'
 
 value={searchQuery}
 // For the storing state variable basiclly storing input value so here it will use state variable
-
-onChange={(e) => setSearchQuery(e.target.value)}
+onChange={(e:React.ChangeEvent<HTMLInputElement>):void =>  setSearchQuery(e.target.value)}
+// (property) React.ChangeEvent<HTMLInputElement>.target: EventTarget & HTMLInputElement
 //  and update the state variable on any edits! so here it value use state function 
 
 />

@@ -1,8 +1,5 @@
-import React from 'react'
-import { useNavigate , Link } from 'react-router-dom'
 
 const Footer = () => {
-    const navigate = useNavigate()
   return (
     <div className='     bg-white shadow-lg flex  justify-center p-2 '>      
      
