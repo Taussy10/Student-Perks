@@ -13,18 +13,15 @@ type Data = {
   name: string;
 }
 
-type Search = {
-  searchQuery: any,
-  setSearchQuery: React.Dispatch<React.SetStateAction<string>>; 
+type PerkLink = {
+  PerkLink: string ,
+  courseBgImage: string,
+  courseLogo: string,
+  companyName: string ,
+  desc: string
 }
 
-interface PerkData {
-  PerkLink: string;
-  courseBgImage: string;
-  courseLogo: string;
-  companyName: string;
-  desc: string;
-}
+
 const Home:FC<Data> = () => {
   const [selectedCategory, setSelectedCategory] = useState("Popular");
   // by default ALL 
@@ -113,7 +110,7 @@ console.log(courseData , "Data");
 {/* put here Data */}
 {
     
-    filteredData.map((item: [] , index: number) => 
+    filteredData.map((item:PerkLink , index: number) => 
       // {
 
       // }

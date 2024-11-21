@@ -1,7 +1,14 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const Navbar = ({ navItems, selectedCategory, setSelectedCategory }) => {
+interface NavbarProps {
+  navItems: string[]; // An array of strings
+  selectedCategory: string; // A string
+  setSelectedCategory: React.Dispatch<React.SetStateAction<string>>; // A function to update state
+}
+
+
+const Navbar:FC<NavbarProps> = ({ navItems , selectedCategory, setSelectedCategory }) => {
   // State to control hamburger menu visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -9,7 +16,7 @@ const Navbar = ({ navItems, selectedCategory, setSelectedCategory }) => {
     <div className='p-4 bg-white'>
       {/* Desktop Navbar */}
       <div className='hidden md:flex flex-row justify-around'>
-        {navItems.map((item: [], index:string) => (
+        {navItems.map((item, index) => (
           <h1
             key={index}
             className={`text-xl font-semibold cursor-pointer ${selectedCategory === item ? 'text-blue-500' : 'text-black'}`}
@@ -38,7 +45,7 @@ const Navbar = ({ navItems, selectedCategory, setSelectedCategory }) => {
       <div
         className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} flex-col items-center mt-4`}
       >
-        {navItems.map((item:[], index:number) => (
+        {navItems.map((item, index) => (
           <h1
             key={index}
             className={`text-xl font-semibold cursor-pointer ${selectedCategory === item ? 'text-blue-500 ' : 'text-black'} transition-all mb-4`}
