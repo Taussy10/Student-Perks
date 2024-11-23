@@ -25,8 +25,8 @@ export const loginUser = async() => {
     // e.preventDefault()
     await account.createOAuth2Session(
       OAuthProvider.Google,
-      "https://student-perks-zu4y-1jhpye8yb-tausif-razas-projects.vercel.app/",
-      "https://student-perks-zu4y-1jhpye8yb-tausif-razas-projects.vercel.app/auth",
+      "http://localhost:5173",
+      "http://localhost:5173/auth",
 
       // Always use http not https cause for https you need 
       // SSL certificate and that you don't have that's why
