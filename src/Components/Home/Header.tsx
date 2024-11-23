@@ -1,5 +1,5 @@
 import { FC} from 'react'
-import Logo from "../../assets/img/Logo.png"
+import Logo from "../../assets/img/logo.png"
 import {  account ,  } from '../../Appwrite/config'
 // import {   getUser } from '../../Appwrite/config'
 // import user from '../../Pages/Auth'
