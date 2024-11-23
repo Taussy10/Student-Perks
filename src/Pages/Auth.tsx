@@ -2,6 +2,7 @@ import {useState , useEffect} from 'react'
 import { loginUser  , getUser } from '../Appwrite/config'
 import logo from "../assets/img/logo.png"
 import { FcGoogle } from "react-icons/fc";
+import Footer from '../Components/Home/Footer';
 // make sure that if you working it ts then work only in ts not js 
 // cause both thigns don't work each other together 
 
@@ -40,7 +41,7 @@ useEffect(() => {
 
 
   return (
-    <div className=' min-h-screen    flex  flex-col    items-center'>
+    <div className=' min-h-screen  bg-[#F3F4F6]   flex  flex-col    items-center'>
       {user ? (
         <>
           <p>Welcome, bro!</p>
@@ -58,7 +59,7 @@ useEffect(() => {
 </div>
 </div>
 
-<button  onClick={loginUser}  className=" mb-1 shadow-lg bg-[#F3F4F6] w-full  sm:w-[500px] sm:h-24  p-2 sm:p-3 flex items-center justify-center rounded-2xl  gap-2 sm:gap-4 "   >
+<button  onClick={loginUser}  className=" mb-1 shadow-lg   bg-white  w-[300px]  sm:w-[500px] sm:h-24  p-2 sm:p-3 flex items-center justify-center rounded-2xl  gap-2 sm:gap-4 "   >
                              {/*
                              */}
 
@@ -67,6 +68,10 @@ useEffect(() => {
 
 
 </button>
+<div className='  fixed bottom-0  w-full   '>
+
+<Footer/>
+</div>
 </> 
       )}
 

@@ -96,9 +96,9 @@ console.log(searchQuery);
             <button className='text-xl ' onClick={addData}>Add data</button> */}
 
 
-  <div className='  flex    sm:*:flex-col   sm:mr-16 ml-16    justify-between   items-center flex-wrap  '>
+  <div className='  flex    sm:*:flex-col   sm:mr-16 ml-16    justify-between   items-center flex-wrap   '>
 
-        <img onClick={ logoutUser} src={Logo} alt="" className=' h-full w-48 cursor-pointer' />
+        <img onClick={ logoutUser} src={Logo} alt="" className=' h-full w-48 cursor-pointer ' />
 
 <h1 className=' text-3xl mb-5 sm:text-5xl  text-blue-500  font-bold'>Student Perks </h1>
 <div className=' '>
