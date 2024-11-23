@@ -1,6 +1,6 @@
 
 
-import Footer from './Components/Home/Footer'
+// import Footer from './Components/Home/Footer'
 import { Outlet } from 'react-router-dom'
 
 function Layout() {
