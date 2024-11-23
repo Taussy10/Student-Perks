@@ -50,7 +50,7 @@ useEffect(() => {
 <div className=' flex flex-col    items-center'>
 
 
-<img src={logo} alt="logo"  className='   text-gray-800 h-60 mb-2  bg-green-500  '/>
+<img src={logo} alt="logo"  className='   text-gray-800 h-60 mb-2  '/>
 
 <div className=' ml-8 mr-5 flex flex-col gap-3 mb-40 '>
 <h1 className='   text-2xl sm:text-3xl font-bold text-blue-500 '>Why spend Money when you can Save it ? </h1>
