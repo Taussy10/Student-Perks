@@ -26,3 +26,6 @@ dist-ssr
 # env
 .env
 Notes.txt
+Data.ts
+
+
