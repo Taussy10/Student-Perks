@@ -3,6 +3,7 @@ import Logo from "../../assets/img/logo.png"
 import {  account ,  } from '../../Appwrite/config'
 // import {   getUser } from '../../Appwrite/config'
 // import user from '../../Pages/Auth'
+import coffee from '../../assets/img/coffee.png'
 
 import {  useNavigate } from 'react-router-dom'
 
@@ -100,7 +101,15 @@ console.log(searchQuery);
 
         <img onClick={ logoutUser} src={Logo} alt="" className=' h-full w-48 cursor-pointer ' />
 
+<div className=' text-xl flex flex-row items-center'> 
 <h1 className=' text-3xl mb-5 sm:text-5xl  text-blue-500  font-bold'>Student Perks </h1>
+
+
+<a href="https://buymeacoffee.com/studentPerks" target='blank' rel="noopener"  >
+<img src={coffee} alt="" className=' w-12 ' />
+</a>
+</div>
+
 <div className=' '>
 
 <input type="text"
