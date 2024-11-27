@@ -7,6 +7,7 @@ import Auth from './Pages/Auth.tsx';
 import { getUser } from './Appwrite/config.ts';
 import Layout from './Layout.tsx';
 import './index.css';
+import Loading from './Components/Loading.tsx';
 
 interface User {
   $id: string ,
@@ -34,8 +35,14 @@ const App = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>; // Display a loading message while checking user status
+    return <Loading />
+    // setTimeout(() => {
+    //   <Loading /> 
+    // }, 3000);
+   
+    // <div>Loading...</div>; // Display a loading message while checking user status
   }
+  // loading in main 
 
   const router = createBrowserRouter(
     createRoutesFromElements(

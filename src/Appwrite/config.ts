@@ -1,5 +1,6 @@
-import { Client, Account, OAuthProvider, Databases, ID , Query , Storage } from 'appwrite';
-import { courseData } from '../Data/Data';
+import { Client, Account, OAuthProvider, Databases,  Query , Storage } from 'appwrite';
+// import { courseData } from '../Data/Data';
+
 // import { LiaSteam } from 'react-icons/lia';
 
 // Use navigate hook can only work in JSX component not in standalone functin
@@ -73,25 +74,25 @@ export const getUser = async () => {
 
 
 
-export const addData = async () => {
-  try {
+// export const addData = async () => {
+//   try {
 
-     courseData.forEach((data) => {
-     databases.createDocument(
-      appwriteConfig.databaseId, // Database ID
-      appwriteConfig.collectionId, // Collection ID
-      // [Query.limit(100)], // Set an appropriate limit to match your total number of documents
-      ID.unique(), // Automatically generate unique ID
-      data
-      // Argument of type 'string[]' is not assignable to parameter of type 'string'.ts(2345)
-    );
+//      courseData.forEach((data) => {
+//      databases.createDocument(
+//       appwriteConfig.databaseId, // Database ID
+//       appwriteConfig.collectionId, // Collection ID
+//       // [Query.limit(100)], // Set an appropriate limit to match your total number of documents
+//       ID.unique(), // Automatically generate unique ID
+//       data
+//       // Argument of type 'string[]' is not assignable to parameter of type 'string'.ts(2345)
+//     );
       
-     });
-    console.log( "Added all the data");
-  } catch (error) {
-    console.error("Error adding data:", error);
-  }
-};
+//      });
+//     console.log( "Added all the data");
+//   } catch (error) {
+//     console.error("Error adding data:", error);
+//   }
+// };
 
 
 export const updateData = async () => {
