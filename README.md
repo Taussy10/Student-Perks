@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-    <a href="https://student-perks.vercel.app" target="_blank">
+    <a href="https://student-perks.vercel.app" target="_blank" rel="noopener noreferrer">
       <img src="https://i.postimg.cc/5NR9bxFM/Sora-README.png" alt="Website Home Page">
     </a>
   <br />
@@ -24,9 +24,6 @@
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets](#snippets)
-6. 🔗 [Links](#links)
-7. 🚀 [More](#more)
 
 
 
@@ -37,7 +34,7 @@ this app showcases impressive design and functionality, enabling seamless sharin
 
 If you want to contribute or have any quries then you can DM me on 
 
-<a href="https://x.com/taussy10" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+<a href="https://x.com/taussy10" target="_blank" rel="noopener noreferrer" ><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -89,5 +86,5 @@ npm run dev
 ```
 
 
-**Thanks For Reading 💙
+**Thanks For Reading 💙**
 
