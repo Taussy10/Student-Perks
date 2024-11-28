@@ -101,7 +101,7 @@ console.log(searchQuery);
 
         <img onClick={ logoutUser} src={Logo} alt="" className=' h-full w-48 cursor-pointer ' />
 
-<div className=' text-xl flex flex-row items-center'> 
+<div className=' flex flex-col  sm:flex-row  items-center   mb-2 '> 
 <h1 className=' text-3xl mb-5 sm:text-5xl  text-blue-500  font-bold'>Student Perks </h1>
 
 
