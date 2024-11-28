@@ -101,12 +101,12 @@ console.log(searchQuery);
 
         <img onClick={ logoutUser} src={Logo} alt="" className=' h-full w-48 cursor-pointer ' />
 
-<div className=' flex flex-col  sm:flex-row  items-center   mb-2 '> 
-<h1 className=' text-3xl mb-5 sm:text-5xl  text-blue-500  font-bold'>Student Perks </h1>
+<div className=' flex flex-col  sm:flex-row  items-center mb-1    '> 
+<h1 className=' text-3xl  sm:text-5xl  text-blue-500 mt-2 font-bold'>Student Perks </h1>
 
 
 <a href="https://buymeacoffee.com/studentPerks" target='blank' rel="noopener"  >
-<img src={coffee} alt="" className=' w-12 ' />
+<img src={coffee} alt="" className=' w-12 mt-2 ' />
 </a>
 </div>
 
