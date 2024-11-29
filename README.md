@@ -1,17 +1,17 @@
 <div align="center">
   <br />
     <a href="https://student-perks.vercel.app" target="_blank" rel="noopener noreferrer">
-      <img src="https://i.postimg.cc/5NR9bxFM/Sora-README.png" alt="Website Home Page">
+      <img src="https://cloud.appwrite.io/v1/storage/buckets/67211e14002cf6068587/files/6749946c0011cbe563fb/view?project=670f793200296470b5b2&project=670f793200296470b5b2&mode=admin" alt="Website Home Page">
     </a>
   <br />
 
   <div>
-    <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
+    <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="react.js" />
     <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
-    <img src="https://img.shields.io/badge/NativeWind-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="nativewind" />
+    <img src="https://img.shields.io/badge/Tailwind-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwind" />
   </div>
 
-  <h3 align="center">Video Sharing App</h3>
+  <h3 align="center">Student Perks Website</h3>
 
    <div align="center">
      Build this project so that every student can get <a href="https://student-perks.vercel.app" target="_blank"><b>Student Perks!</b></a> 
@@ -32,9 +32,9 @@
 Built with React for seamless user experiences and integrated with the dependable backend systems of Appwrite, 
 this app showcases impressive design and functionality, enabling seamless sharing of AI videos within the community.
 
-If you want to contribute or have any quries then you can DM me on 
+If you have any quries then you can DM me on 
 
-<a href="https://x.com/taussy10" target="_blank" rel="noopener noreferrer" ><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+[![Twitter](https://img.shields.io/badge/Twitter-%23000000?style=for-the-badge&logo=X&labelColor=black&color=black)](https://twitter.com/Taussy10)
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
