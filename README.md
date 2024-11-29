@@ -6,6 +6,7 @@
   <br />
 
   <div>
+    <img src="https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="react.js" />
     <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="react.js" />
     <img src="https://img.shields.io/badge/-Appwrite-black?style=for-the-badge&logoColor=white&logo=appwrite&color=FD366E" alt="appwrite" />
     <img src="https://img.shields.io/badge/Tailwind-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwind" />
@@ -38,6 +39,7 @@ If you have any quries then you can DM me on
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
+- Typescript
 - React 
 - Tailwind
 - Appwrite
