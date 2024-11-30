@@ -46,12 +46,12 @@ If you have any quries then you can DM me on
 
 ## <a name="features">🔋 Features</a>
 
-👉 **Onboarding Screen**: Engaging graphics and clear instructions welcome users to the app.
 
-👉 **Robust Authentication & Authorization System**: Secure email login safeguards user accounts.
+👉 **Authorization **: Secure secure signup auth by Google for safeguarding user accounts.
 
-👉 **Dynamic Home Screen with Animated Flat List**: Smoothly animated flat list showcases the latest videos for seamless browsing.
+👉 **Sections**: Created sections(Popular,Education , Software&Tools , Entertainment , Health&Wellbeing and Shopping) for use ease to filter the Perks 
 
+👉 **Search Functiionaliy **: Created Search functionality so that user can find perks in their respective section Perks without scrolling to the end.
 
 
 
@@ -66,6 +66,9 @@ Make sure you have the following installed on your machine:
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
+
+Make sure you have setup Appwrite account:
+- [Appwrite](https://www.appwrite.io)
 
 **Cloning the Repository**
 
