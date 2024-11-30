@@ -47,11 +47,11 @@ If you have any quries then you can DM me on
 ## <a name="features">🔋 Features</a>
 
 
-👉 **Authorization **: Secure secure signup auth by Google for safeguarding user accounts.
+👉 **Authorization**: Secure secure signup auth by Google for safeguarding user accounts.
 
 👉 **Sections**: Created sections(Popular,Education , Software&Tools , Entertainment , Health&Wellbeing and Shopping) for use ease to filter the Perks 
 
-👉 **Search Functiionaliy **: Created Search functionality so that user can find perks in their respective section Perks without scrolling to the end.
+👉 **Search Functiionaliy**: Created Search functionality so that user can find perks in their respective section Perks without scrolling to the end.
 
 
 
