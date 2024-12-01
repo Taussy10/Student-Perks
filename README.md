@@ -12,6 +12,38 @@
     <img src="https://img.shields.io/badge/Tailwind-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwind" />
   </div>
 
+<p marginTop = 20 >
+  <a href="https://github.com/taussy10">
+    <img src="https://img.shields.io/github/contributors/taussy10/Student-Perks" alt="contributors" />
+  </a>
+  <a href="https://github.com/taussy10">
+    <img src="https://img.shields.io/github/last-commit/taussy10/Student-Perks" alt="last update" />
+  </a>
+  <a href="https://github.com/taussy10">
+    <img src="https://img.shields.io/github/forks/taussy10/Student-Perks" alt="forks" />
+  </a>
+  <a href="https://github.com/taussy10">
+    <img src="https://img.shields.io/github/stars/taussy10/Student-Perks" alt="stars" />
+  </a>
+  <a href="https://github.com/taussy10">
+    <img src="https://img.shields.io/github/issues/taussy10/Student-Perks" alt="open issues" />
+  </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
   <h3 align="center">Student Perks Website</h3>
 
    <div align="center">
