@@ -13,19 +13,19 @@
   </div>
 
 <p marginTop = 20 >
-  <a href="https://github.com/taussy10">
+  <a href="https://github.com/taussy10/Student-Perks">
     <img src="https://img.shields.io/github/contributors/taussy10/Student-Perks" alt="contributors" />
   </a>
-  <a href="https://github.com/taussy10">
+  <a href="https://github.com/taussy10/Student-Perks">
     <img src="https://img.shields.io/github/last-commit/taussy10/Student-Perks" alt="last update" />
   </a>
-  <a href="https://github.com/taussy10">
+  <a href="https://github.com/taussy10/Student-Perks">
     <img src="https://img.shields.io/github/forks/taussy10/Student-Perks" alt="forks" />
   </a>
-  <a href="https://github.com/taussy10">
+  <a href="https://github.com/taussy10/Student-Perks">
     <img src="https://img.shields.io/github/stars/taussy10/Student-Perks" alt="stars" />
   </a>
-  <a href="https://github.com/taussy10">
+  <a href="https://github.com/taussy10/Student-Perks">
     <img src="https://img.shields.io/github/issues/taussy10/Student-Perks" alt="open issues" />
   </a>
 
