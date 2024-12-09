@@ -62,8 +62,7 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Built with React for seamless user experiences and integrated with the dependable backend systems of Appwrite, 
-this app showcases impressive design and functionality, enabling seamless sharing of AI videos within the community.
+Write intro here 
 
 If you have any quries then you can DM me on 
 
