@@ -62,7 +62,7 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Write intro here 
+Get Student Perks for FREE
 
 If you have any quries then you can DM me on 
 
