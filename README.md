@@ -47,7 +47,7 @@
   <h3 align="center">Student Perks Website</h3>
 
    <div align="center">
-     Build this project so that every student can get <a href="https://student-perks.vercel.app" target="_blank"><b>Student Perks!</b></a> 
+     Built this project so that every student can get <a href="https://student-perks.vercel.app" target="_blank"><b>Student Perks!</b></a> 
     </div>
 </div>
 
