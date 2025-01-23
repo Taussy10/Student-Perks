@@ -56,7 +56,6 @@
 1. 🤖 [Introduction](#introduction)
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
 
 
 
@@ -64,9 +63,7 @@
 
 Get Student Perks for FREE
 
-If you have any quries then you can DM me on 
 
-[![Twitter](https://img.shields.io/badge/Twitter-%23000000?style=for-the-badge&logo=X&labelColor=black&color=black)](https://twitter.com/Taussy10)
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -84,43 +81,7 @@ If you have any quries then you can DM me on
 
 👉 **Search Functionality**: Created Search functionality so that user can find perks in their respective section Perks without scrolling to the end.
 
-
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-Make sure you have setup Appwrite account:
-- [Appwrite](https://www.appwrite.io)
-
-**Cloning the Repository**
-
-```bash
-git clone https://github.com/Taussy10/Student-Perks.git
-cd Student-Perks
-```
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
-npm install
-```
-
-**Running the Project**
-
-```bash
-npm run dev
-```
-
+<hr/>
 
 **Thanks For Reading 💙**
 
